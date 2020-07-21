@@ -6,12 +6,13 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/20 18:14:03 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/21 04:37:59 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/21 05:44:46 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_strs_to_tab.h"
 #include <stdlib.h>
+#include <unistd.h>
 
 char				*ft_strcpy(char *dest, char *src)
 {
@@ -34,14 +35,14 @@ int					ft_strlen(char *str)
 	i = 0;
 	while (str[i])
 		i++;
-	return (i + 1);
+	return (i);
 }
 
 char				*ft_strdup(char *src)
 {
 	char *s;
 
-	if (!(s = (char*)malloc(sizeof(*s) * ft_strlen(src))))
+	if (!(s = (char*)malloc(sizeof(*s) * ft_strlen(src) + 1)))
 		return (0);
 	ft_strcpy(s, src);
 	return (s);

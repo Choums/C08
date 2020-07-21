@@ -6,12 +6,13 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/21 02:01:57 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/21 04:37:35 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/21 05:46:01 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_stock_str.h"
 #include <unistd.h>
+#include <stdlib.h>
 
 void					ft_putchar(char c)
 {
