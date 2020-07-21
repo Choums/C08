@@ -6,11 +6,12 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/20 18:14:03 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/21 01:47:07 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/21 04:37:59 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_strs_to_tab.h"
+#include <stdlib.h>
 
 char				*ft_strcpy(char *dest, char *src)
 {
@@ -22,7 +23,7 @@ char				*ft_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = src[i];
+	dest[i] = '\0';
 	return (dest);
 }
 
@@ -33,7 +34,7 @@ int					ft_strlen(char *str)
 	i = 0;
 	while (str[i])
 		i++;
-	return (i);
+	return (i + 1);
 }
 
 char				*ft_strdup(char *src)
