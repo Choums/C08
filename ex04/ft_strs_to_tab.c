@@ -6,11 +6,11 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/20 18:14:03 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/21 05:44:46 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/21 09:19:03 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_strs_to_tab.h"
+#include "ft_stock_str.h"
 #include <stdlib.h>
 #include <unistd.h>
 
